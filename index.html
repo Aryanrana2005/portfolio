@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AryaPorto | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    .social-links img {
+      width: 24px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    .stats-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .stats-grid div {
+      background: var(--bg);
+      border: 1px solid var(--border-color);
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 140px;
+    }
+    .social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  margin: 0 6px;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">AryaPorto</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="home-hero">
+    <div class="container fade-in">
+      <div class="profile-image slide-in-left">
+        <img src="WhatsApp Image 2025-06-19 at 21.08.37_da4675ed.jpg" alt="Aryan Rana" />
+      </div>
+      <h1 class="slide-in-right">Hey, I'm Aryan Rana</h1>
+      <p class="fade-in-delayed">Aspiring Game Developer | Creative thinker with a tech passion. Building my path through code, curiosity, and a sprinkle of chaos-driven innovation.</p>
+      <a href="projects.html" class="btn pulse">See My Work</a>
+    </div>
+  </main>
+
+  <!-- My Journey Section -->
+  <section class="section journey" data-aos="fade-up">
+    <div class="container">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>2024</h4>
+          <p>Started learning C and C++ to understand core programming concepts.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2025</h4>
+          <p>Built small games in the console and explored HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2026</h4>
+          <p>Diving into Unity and Unreal Engine while creating portfolio projects to showcase my skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Technologies -->
+  <section class="section tech-stack" data-aos="fade-up">
+    <div class="container">
+      <h2>Tools & Technologies</h2>
+      <div class="skills">
+        <li>Unity</li>
+        <li>Unreal Engine</li>
+        <li>Blender</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats" data-aos="fade-up">
+    <div class="container">
+      <h2>Quick Stats</h2>
+      <div class="stats-grid">
+        <div><strong>10+</strong><br><span>Mini Projects</span></div>
+        <div><strong>2</strong><br><span>Game Jams</span></div>
+        <div><strong>100+</strong><br><span>Hours of Coding</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Motto or Quote -->
+  <section class="section quote" data-aos="fade-up">
+    <div class="container">
+      <blockquote>"Games don't just entertain — they connect, challenge, and inspire. I want to build those experiences."</blockquote>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section cta" data-aos="zoom-in">
+    <div class="container">
+      <h2>Let's Build Something Awesome</h2>
+      <p>If you're working on a project or just want to chat about game development, I'm always open to connect.</p>
+      <a href="contact.html" class="btn pulse">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aryan Rana <span class="sep">•</span> <a href="contact.html">Contact</a></p>
+    <div class="social-links">
+  <a href="https://github.com/Aryanrana2005" target="_blank"><img src="github_logo_icon_229278.webp" alt="GitHub"></a>
+  <a href="www.linkedin.com/in/aryan-rana-415737370" target="_blank"><img src="2018_social_media_popular_app_logo_linkedin-512.webp" alt="LinkedIn"></a>
+  
+</div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
