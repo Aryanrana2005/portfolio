@@ -2,170 +2,237 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AryaPorto | Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-    .social-links img {
-      width: 24px;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
-
-    .stats-grid {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      text-align: center;
-      flex-wrap: wrap;
-    }
-
-    .stats-grid div {
-      background: var(--bg);
-      border: 1px solid var(--border-color);
-      padding: 20px;
-      border-radius: 8px;
-      flex: 1;
-      min-width: 140px;
-    }
-    .social-links {
-  margin-top: 10px;
-}
-
-.social-icon {
-  width: 22px;
-  height: 22px;
-  margin: 0 6px;
-  opacity: 0.8;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-
-  <header>
-    <div class="logo">AryaPorto</div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+ 
+  <header class="nav">
+    <a class="brand">
+      <span class="logo"><img src="logoimg.png" alt="logo" width="70px" height="60px"></span>
+      <span><i>Portfolio</i></span>
+    </a>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn btn--ghost">Contact</a>
     </nav>
   </header>
 
-  <main class="home-hero">
-    <div class="container fade-in">
-      <div class="profile-image slide-in-left">
-        <img src="WhatsApp Image 2025-06-19 at 21.08.37_da4675ed.jpg" alt="Aryan Rana" />
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="hero__text">
+      <h1 class="title">
+        Game developer <span class="accent"></span>
+      </h1>
+      <p class="sub">
+        I’m Aryan, an indie game developer and a BCA student currently in 2nd year. I love building games that tell stories and mess with your mind a little — right now I’m working solo on a horror game called Mother Knows Son’s Silence using Unreal Engine 5.
+
+I’m learning as I go, using tools like Blender, SFM, and even AI tools like ChatGPT to help bring my ideas to life. I'm all about creating creepy vibes, unique mechanics, and just making cool stuff that people can experience and feel.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="aryanresume.pdf" target="_blank" rel="resume">📘Resume</a>
+        <a class="btn btn--ghost" href="mailto:aryanrana50030@gmail.com">📧 Email</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/aryanrana2005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="link">💻LinkedIn</a>
       </div>
-      <h1 class="slide-in-right">Hey, I'm Aryan Rana</h1>
-      <p class="fade-in-delayed">Aspiring Game Developer | Creative thinker with a tech passion. Building my path through code, curiosity, and a sprinkle of chaos-driven innovation.</p>
-      <a href="projects.html" class="btn pulse">See My Work</a>
+    </div>
+
+    <div class="hero__avatar">
+     
+      <img src="WhatsApp Image 2025-06-19 at 21.08.37_da4675ed.jpg" alt="img" />
+      <div class="aura"></div>
     </div>
   </main>
 
-  <!-- My Journey Section -->
-  <section class="section journey" data-aos="fade-up">
-    <div class="container">
-      <h2>My Journey</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h4>2024</h4>
-          <p>Started learning C and C++ to understand core programming concepts.</p>
+  <section id="projects" class="section">
+    <div class="section__head">
+      <h2>Projects</h2>
+      <p>Selected work — click a card for details.</p>
+    </div>
+
+    
+    <div class="cards">
+      
+      <article class="card">
+        <div class="card__media">
+          <img src="earth-orbit.png" alt="earth-orbit">
+          <button class="pill">HTML5</button>
         </div>
-        <div class="timeline-item">
-          <h4>2025</h4>
-          <p>Built small games in the console and explored HTML, CSS, and JavaScript.</p>
+        <div class="card__body">
+          <h3>🌍 Earth and Sun Project</h3>
+          <p class="muted">Simulating Earth's orbit and sun's position using basic animation and logic.</p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>First animation project</li>
+          </ul><br><br>
+          <a class="btn btn--small" href="https://aryanrana2005.github.io/earth-orbit/" target="_blank" rel="earth-orbit">Tap To View</a>
         </div>
-        <div class="timeline-item">
-          <h4>2026</h4>
-          <p>Diving into Unity and Unreal Engine while creating portfolio projects to showcase my skills.</p>
+      </article>
+
+      
+      <article class="card">
+        <div class="card__media">
+          <img src="solar-system.png" alt="solar-system">
+          <button class="pill pill--alt">JS</button>
         </div>
-      </div>
+        <div class="card__body">
+          <h3>☀️ Solar System Project</h3>
+          <p class="muted">A visual simulation of the solar system with planets orbiting around the sun using HTML, CSS, and JavaScript</p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul><br>
+          <a class="btn btn--small" href="https://aryanrana2005.github.io/solor-system/" target="_blank" rel="solor-system">Tap to view</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="car-game.png" alt="car-game">
+          <button class="pill">JS Game</button>
+        </div>
+        <div class="card__body">
+          <h3>🎮 Game Project</h3>
+          <p class="muted">A mini-game built with JavaScript-sorry its under working.</p>
+          <ul class="tags">
+            <li>Html</li><li>Css</li><li>JavaScript</li>
+          </ul><br><br>
+          <a class="btn btn--small" href="https://aryanrana2005.github.io/car-theme/" target="_blank" rel="car game">Tap to play</a>
+        </div>
+      </article>
+      
+<article class="card">
+  <div class="card__media">
+    <img src="amazon.png" alt="Project screenshot">
+    <button class="pill pill--alt">Html5</button>
+  </div>
+  <div class="card__body">
+    <h3>🛒 Amazon Clone</h3>
+    <p class="muted">Basic Amazon-like homepage with responsive layout and product cards</p>
+    <ul class="tags">
+      <li>Html</li><li>css</li>
+    </ul><br><br>
+    <a class="btn btn--small" href="https://aryanrana2005.github.io/amazon-clone/" target="_blank" rel="amazon clont">Tap to view</a>
+  </div>
+</article>
+
+
+<article class="card">
+  <div class="card__media">
+    <img src="scientific-cal.png" alt="Project screenshot">
+    <button class="pill">C++</button>
+  </div>
+  <div class="card__body">
+    <h3>Scientific Calculator</h3>
+    <p class="muted">I developed a scientific calculator using C++, featuring advanced mathematical functions for enhanced calculation capabilities.</p>
+    <ul class="tags">
+      <li>C++</li>
+    </ul>
+    <a class="btn btn--small" href="https://github.com/Aryanrana2005/First-c--project.git" target="_blank" rel="scientific calculator">Tap to View code</a>
+  </div>
+</article>
+
+
+<article class="card">
+  <div class="card__media">
+    <img src="sdimt-old.png" alt="sdimt-old">
+    <button class="pill">College Project</button>
+  </div>
+  <div class="card__body">
+    <h3>🏫 SDIMT Project</h3>
+    <p class="muted">Educational website demo built for Shri Dronacharya Institute of Management & Technology.</p>
+    <ul class="tags">
+      <li>Html</li><li>Css</li>
+    </ul><br>
+    <a class="btn btn--small" href="https://aryanrana2005.github.io/Sdimt/" class="btn" target="_blank" rel="Sdimt">Tap to view</a>
+  </div>
+</article>
+
+
+<article class="card">
+  <div class="card__media">
+    <img src="new-sdimt.png" alt="new-sdimtt">
+    <button class="pill pill--alt">✨ New SDIMT Project</button>
+  </div>
+  <div class="card__body">
+    <h3>🏫 New SDIMT Project</h3>
+    <p class="muted">Updated design version with modern UI and animations for SDIMT website.</p>
+    <ul class="tags">
+      <li>Html</li><li>Css</li>
+    </ul><br><br>
+    <a class="btn btn--small" href="https://aryanrana2005.github.io/Sdimtmode/" target="_blank" rel="new-sdimt">View Project</a>
+  </div>
+</article>
+
+
     </div>
   </section>
-
-  <!-- Tools & Technologies -->
-  <section class="section tech-stack" data-aos="fade-up">
-    <div class="container">
-      <h2>Tools & Technologies</h2>
-      <div class="skills">
-        <li>Unity</li>
-        <li>Unreal Engine</li>
-        <li>Blender</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="section stats" data-aos="fade-up">
-    <div class="container">
-      <h2>Quick Stats</h2>
-      <div class="stats-grid">
-        <div><strong>10+</strong><br><span>Mini Projects</span></div>
-        <div><strong>2</strong><br><span>Game Jams</span></div>
-        <div><strong>100+</strong><br><span>Hours of Coding</span></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Motto or Quote -->
-  <section class="section quote" data-aos="fade-up">
-    <div class="container">
-      <blockquote>"Games don't just entertain — they connect, challenge, and inspire. I want to build those experiences."</blockquote>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="section cta" data-aos="zoom-in">
-    <div class="container">
-      <h2>Let's Build Something Awesome</h2>
-      <p>If you're working on a project or just want to chat about game development, I'm always open to connect.</p>
-      <a href="contact.html" class="btn pulse">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Aryan Rana <span class="sep">•</span> <a href="contact.html">Contact</a></p>
-    <div class="social-links">
-  <a href="https://github.com/Aryanrana2005" target="_blank"><img src="github_logo_icon_229278.webp" alt="GitHub"></a>
-  <a href="www.linkedin.com/in/aryan-rana-415737370" target="_blank"><img src="2018_social_media_popular_app_logo_linkedin-512.webp" alt="LinkedIn"></a>
   
-</div>
 
-  </footer>
+  
+  <section id="about" class="section section--panel">
+    <div class="section__head">
+      <h2>About me</h2>
+      <p>I’m a passionate student currently diving deep into the world of game development, with a special focus on Unreal Engine. My goal is to become an indie game developer and bring unique, creative ideas to life through immersive and engaging experiences.</p>
+      <p>This portfolio is a space to share my journey, showcase what I’m working on, and connect with others who are just as excited about games as I am.</p>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <div class="grid">
+      <div class="about__box">
+        <h4>Core skills</h4>
+        <ul class="list">
+          <li>Game Development:Learning Unreal Engine 5 – Blueprints Visual Scripting</li>
+          <li>Programming Languages:C++, C, HTML5, CSS3, JavaScript (Basic)/li>
+          <li>Level blockouts and greyboxing for iteration</li>
+        </ul>
+      </div>
+
+      <div class="about__box">
+        <h4>Tools</h4>
+        <ul class="list">
+          <li>Game & 3D Tools: Unreal Engine 5 (Blueprints), Blender, Source Filmmaker (SFM)</li>
+          <li>Version Control & Collaboration: Git (basic), GitHub</li>
+          <li>Productivity & Learning: ChatGPT, AI tools for problem-solving and prototyping</li>
+        </ul>
+      </div>
+
+      <div class="about__box">
+        <h4>Currently</h4>
+        <p class="muted"><p>Bachelor of Computer Applications (BCA)</p>Horror Game: Mother Knows Son’s Silence
+Solo Developer – In Progress
+
+Developing a first-person psychological horror game using Unreal Engine 5 Blueprints
+
+Creating a suspenseful atmosphere through level design, lighting, and sound
+
+Designing custom 3D assets and animations using Blender and Source Filmmaker (SFM)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section__head">
+      <h2>Contact</h2>
+      
+    </div>
+
+    <div class="contact">
+       <a class="chip" href="mailto:Aryanrana50030@gmail.com">📧 Aryanrana50030@gmail.com</a>
+      <a class="chip" href="https://www.linkedin.com/in/aryanrana2005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener">💻Linkedin</a>
+      <a class="chip" href="https://aryanrana2005.itch.io/" target="_blank" rel="noopener">🎮itch.io</a>
+    </div>
+
+    <footer class="footer">
+      <p>@<span id="year"></span>: Aryan Rana Built with love</p>
+    </footer>
+  </section>
+
   <script>
-    AOS.init();
-
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
